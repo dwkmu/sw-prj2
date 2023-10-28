@@ -84,7 +84,7 @@ if (dist_raw<_DIST_MIN){
 } else if (dist_raw>_DIST_MAX){
   myservo.writeMicroseconds(_DUTY_MAX);
 }else{
-  myservo.writeMicroseconds(((dist_raw-DIST_MIN)/18)*100+_DUTY_MIN);
+  myservo.writeMicroseconds(((dist_raw-_DIST_MIN)/18)*100+_DUTY_MIN);
 }
   
 
